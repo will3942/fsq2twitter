@@ -20,23 +20,26 @@ Installation
 
 1.  Clone files  
 
-    $ git clone https://github.com/will3942/fsq2twitter.git  
-    $ cd fsq2twitter  
+    ```$ git clone https://github.com/will3942/fsq2twitter.git  
+    $ cd fsq2twitter 
+    ``` 
     
 2.  Generate self-signed SSL certificates or install other ones. To generate follow the article [here](https://devcenter.heroku.com/articles/ssl-certificate-self "here"). Copy these into the "ssl" folder in the "fsq2twitter" folder.
 
 3.  Edit the nginx config file with your domain name and ssl certificate locations
     
-    $ sudo mv nginx-f2t-conf /etc/nginx/sites-enabled/  
+    ```$ sudo mv nginx-f2t-conf /etc/nginx/sites-enabled/  
     $ sudo nano /etc/nginx/sites-enabled/nginx-f2t-conf  
     $ sudo service nginx reload  
+    ```
 
 4.  Edit the fsq2twitter app file with your information. Generate the oauth keys and access tokens at https://foursquare.com/developers/ and https://dev.twitter.com/ . For twitter make sure "read and write" access is enabled for the access token.
 
 5.  Launch the script and keep it running in the background.
 
-    $ screen -S fsq2twitter  
+    ```$ screen -S fsq2twitter  
     $ ruby app.rb  
+    ```
 
 6.  Done!
 
