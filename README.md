@@ -20,7 +20,8 @@ Installation
 
 1.  Clone files  
 
-```$ git clone https://github.com/will3942/fsq2twitter.git  
+```ruby
+$ git clone https://github.com/will3942/fsq2twitter.git  
 $ cd fsq2twitter 
 ``` 
     
@@ -28,7 +29,8 @@ $ cd fsq2twitter
 
 3.  Edit the nginx config file with your domain name and ssl certificate locations
     
-```$ sudo mv nginx-f2t-conf /etc/nginx/sites-enabled/  
+```ruby
+$ sudo mv nginx-f2t-conf /etc/nginx/sites-enabled/  
 $ sudo nano /etc/nginx/sites-enabled/nginx-f2t-conf  
 $ sudo service nginx reload  
 ```
@@ -37,7 +39,8 @@ $ sudo service nginx reload
 
 5.  Launch the script and keep it running in the background.
 
-```$ screen -S fsq2twitter  
+```ruby
+$ screen -S fsq2twitter  
 $ ruby app.rb  
 ```
 
