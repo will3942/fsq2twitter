@@ -13,7 +13,8 @@ Dependencies
 5.  webrick (gem)  
 6.  json (gem)  
 7.  oauth (gem)  
-8.  nginx (or apache but config not included)  
+8.  RestClient (gem)
+9.  nginx (or apache but config not included)  
 
 Installation
 --------

@@ -6,6 +6,7 @@ require 'webrick/https'
 require 'openssl'
 require 'json'
 require 'oauth'
+require 'rest-client'
 
 class CheckinServer  < Sinatra::Base
     clientid = "" #foursquare app client id
